@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+     <style name="CustomActionBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="AutoCompleteTextViewAppTheme" parent="android:Widget.Holo.AutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/apptheme_list_selector_holo_dark</item>
+        <item name="android:background">@drawable/apptheme_edit_text_holo_dark</item>
+    </style>
+
+    <style name="ButtonAppTheme" parent="android:Widget.Holo.Button">
+        <item name="android:background">@drawable/apptheme_btn_default_holo_dark</item>
+    </style>
+
+    <style name="ImageButtonAppTheme" parent="android:Widget.Holo.ImageButton">
+        <item name="android:background">@drawable/apptheme_btn_default_holo_dark</item>
+    </style>
+
+    <style name="SpinnerAppTheme" parent="android:Widget.Holo.Spinner">
+        <item name="android:background">@drawable/apptheme_spinner_background_holo_dark</item>
+        <item name="android:dropDownSelector">@drawable/apptheme_list_selector_holo_dark</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+    <style name="Widget.Button.Toggle" parent="android:Widget">
+        <item name="android:background">@drawable/toggle_button_train</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+
+    <style name="toggleButton"  parent="@android:Theme.Black">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle</item>
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+    </style>
+
+</resources>

@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="gridstone.happycommute.app.activity.FavouriteJourneys" >
+
+    <item android:id="@+id/show_bus_map_button"
+        android:title="@string/show_bus_map_title"
+        android:orderInCategory="100"
+        android:icon="@drawable/bus_map_icon"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/show_tram_map_button"
+          android:title="@string/show_tram_map_title"
+          android:orderInCategory="100"
+          android:icon="@drawable/tram_map_icon"
+          app:showAsAction="always"/>
+    <item android:id="@+id/show_train_map_button"
+          android:title="@string/show_train_map_title"
+          android:orderInCategory="100"
+          android:icon="@drawable/train_map_icon"
+          app:showAsAction="always"/>
+    <item android:id="@+id/show_nightrider_map_button"
+          android:title="@string/show_nightrider_map_title"
+          android:orderInCategory="100"
+          android:icon="@drawable/nightrider_map_icon"
+          app:showAsAction="always"
+            />
+</menu>

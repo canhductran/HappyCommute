@@ -1,0 +1,92 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        style="@style/AppTheme">
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/toggle_background_train"
+            android:id="@+id/toggleButtonTrain"
+            style="@style/toggleButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:checked="true" />
+
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/toggle_background_tram"
+            style="@style/toggleButton"
+            android:id="@+id/toggleButtonTram"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/toggleButtonBus"
+            android:layout_toEndOf="@+id/toggleButtonBus" />
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/toggle_background_bus"
+            style="@style/toggleButton"
+            android:id="@+id/toggleButtonBus"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/toggleButtonNightrider"
+            android:layout_toEndOf="@+id/toggleButtonNightrider" />
+        <ToggleButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/toggle_background_nightrider"
+            style="@style/toggleButton"
+            android:id="@+id/toggleButtonNightrider"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/toggleButtonTrain"
+            android:layout_toEndOf="@+id/toggleButtonTrain" />
+
+    </RelativeLayout>
+
+    <AutoCompleteTextView
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:singleLine="true"
+        android:id="@+id/autoCompleteDeparture"
+        android:layout_gravity="center_horizontal"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Enter Departure Stop/Station"
+        style="@style/AutoCompleteTextViewAppTheme"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:dropDownHeight="150dp"
+        android:enabled="true">
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <AutoCompleteTextView
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Enter Arrival Stop/Station"
+        android:singleLine="true"
+        android:id="@+id/autoCompleteArrival"
+        android:imeOptions="actionDone"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:dropDownHeight="100dp"
+        style="@style/AutoCompleteTextViewAppTheme" />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="tram_button" />
+    <item type="id" name="train_button" />
+    <item type="id" name="bus_button" />
+    <item type="id" name="nightrider_button" />
+    <item type="id" name="fav_button" />
+    <item type="id" name="fav_list"/>
+    <item type="id" name="add_fav"/>
+    <item type="id" name="add_fav_departure"/>
+    <item type="id" name="add_fav_arrival"/>
+    <item type="id" name="direction" />
+    <item type="id" name="nightrider_nearby" />
+    <item type="id" name="trams_nearby" />
+    <item type="id" name="train_nearby" />
+    <item type="id" name="buses_nearby" />
+    <item type="id" name="tram_list" />
+    <item type="id" name="train_list" />
+    <item type="id" name="bus_list" />
+    <item type="id" name="nightrider_list" />
+    <item type="id" name="AutocompleteDeparture"/>
+    <item type="id" name="departureText"/>
+    <item type="id" name="arrivalText"/>
+    <item type="id" name="AutocompleteArrival"/>
+    <item type="id" name="station_search" />
+    <item name="transport_toggle_background" type="id"/>
+    <item name="transport_toggle" type="id"/>
+    <item name="search_time_select" type="id">Select Departure Time</item>
+
+
+</resources>

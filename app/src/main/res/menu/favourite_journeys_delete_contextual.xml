@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="gridstone.happycommute.app.activity.FavouriteJourneys" >
+
+    <item android:id="@+id/delete_favourite"
+        android:title="@string/delete_favourite"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_discard"
+        app:showAsAction="always"/>
+</menu>

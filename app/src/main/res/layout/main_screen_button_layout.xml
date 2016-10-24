@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                tools:context="gridstone.HappyCommute.app.MainActivity"
+                android:background="@drawable/main"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ImageButton
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:contentDescription="@string/busButtonDesc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/bus_button"
+        android:layout_gravity="left|top"
+        android:src="@drawable/busbutton"
+        android:alpha="255"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:layout_toStartOf="@+id/nightrider_button"
+        android:layout_alignRight="@+id/tram_button"
+        android:layout_alignEnd="@+id/tram_button"
+        android:layout_alignTop="@+id/nightrider_button"
+        android:layout_alignLeft="@+id/tram_button"/>
+
+    <ImageButton
+        android:contentDescription="@string/nightriderButtonDesc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/nightrider_button"
+        android:layout_gravity="right|top"
+        android:src="@drawable/nightriderbutton"
+        android:background="#ff41a2a9"
+        android:scaleType="centerInside"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:minHeight="100dp"
+        android:minWidth="100dp"/>
+
+    <ImageButton
+        android:contentDescription="@string/tramButtonDesc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/tram_button"
+        android:layout_gravity="left|bottom"
+        android:src="@drawable/trambutton"
+        android:clickable="true"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:layout_below="@+id/mainLogoImageView"
+        android:layout_toLeftOf="@+id/train_button"
+        android:layout_toStartOf="@+id/train_button"
+        android:layout_marginRight="123dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+    <ImageButton
+        android:contentDescription="@string/trainButtonDesc"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/train_button"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/trainbutton"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:layout_alignBottom="@+id/tram_button"
+        android:baselineAlignBottom="false"
+        android:cropToPadding="false"
+        android:layout_below="@+id/mainLogoImageView"
+        android:layout_alignLeft="@+id/nightrider_button"
+        android:layout_alignStart="@+id/nightrider_button"/>
+
+    <ImageView
+        android:contentDescription="@string/mainTextDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainLogoImageView"
+        android:src="@drawable/main_text"
+        android:layout_below="@+id/bus_button"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

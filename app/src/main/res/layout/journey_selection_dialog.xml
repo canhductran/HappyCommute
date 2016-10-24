@@ -1,0 +1,53 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        style="@style/AppTheme">
+
+    </RelativeLayout>
+
+    <AutoCompleteTextView
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:singleLine="true"
+        android:id="@+id/autoCompleteDeparture"
+        android:layout_gravity="center_horizontal"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Enter Departure Stop/Station"
+        style="@style/AutoCompleteTextViewAppTheme"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:dropDownHeight="150dp"
+        android:enabled="true">
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <AutoCompleteTextView
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Enter Arrival Stop/Station"
+        android:singleLine="true"
+        android:id="@+id/autoCompleteArrival"
+        android:imeOptions="actionDone"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:dropDownHeight="100dp"
+        style="@style/AutoCompleteTextViewAppTheme" />
+
+</LinearLayout>

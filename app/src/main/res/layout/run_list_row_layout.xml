@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:id="@+id/runIconImage"
+        android:src="@drawable/run_stop_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/runStationNameTextView"
+        android:layout_toEndOf="@+id/runIconImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/runIconImage"
+        android:maxWidth="200dp"
+        android:minLines="2"
+        android:text="Collingwood"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/runStationDepartureTimeTextView"
+        android:layout_below="@+id/runStationNameTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="xx mins"
+        android:layout_marginRight="10dp"
+        android:paddingRight="10dp"/>
+</RelativeLayout>

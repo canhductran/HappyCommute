@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/widgetItem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/departure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trainLineString"
+        android:textColor="@drawable/list_item_text_selector"
+        android:typeface="sans"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/arrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Platform"
+        android:typeface="sans"
+        android:textColor="@drawable/list_item_text_selector"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/departureTime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:maxWidth="250dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/departureTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arrivalTimeString"
+        android:textColor="@drawable/list_item_text_selector"
+        android:textSize="30sp"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:layout_below="@+id/departure"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/arrival"
+        android:layout_toEndOf="@+id/arrival"
+        android:gravity="right"/>
+
+
+</RelativeLayout>

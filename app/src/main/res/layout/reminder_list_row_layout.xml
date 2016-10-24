@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+    <TextView
+        android:fontFamily="sans-serif"
+        android:id="@+id/line"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="@string/trainLineString"
+        android:textColor="@drawable/list_item_text_selector"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/departureTime"
+        android:text="@string/arrivalTimeString"
+        android:textColor="@drawable/list_item_text_selector"
+        android:textSize="16sp"
+        android:typeface="sans"
+        android:layout_below="@+id/direction"/>
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:typeface="sans"
+        android:id="@+id/direction"
+        android:text="@string/platformString"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+        android:layout_below="@+id/line"
+        android:maxWidth="200dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_toLeftOf="@+id/progressArrowsImageView"
+        android:layout_toStartOf="@+id/progressArrowsImageView"/>
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/progressArrowsImageView"
+        android:background="@drawable/ui_progress_arrows_grey"
+        android:maxHeight="30dp"
+        android:maxWidth="30dp"
+        android:layout_above="@+id/direction"
+        android:layout_alignRight="@+id/destTime"
+        android:layout_alignEnd="@+id/destTime"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/destTime"
+        android:layout_alignTop="@+id/line"
+        android:textSize="16sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/line"
+        android:gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remindTime"
+        android:text="@string/arrivalTimeString"
+        android:textColor="@drawable/list_item_text_selector"
+        android:textSize="16sp"
+        android:typeface="sans"
+        android:layout_below="@+id/departureTime"/>
+
+</RelativeLayout>
